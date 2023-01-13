@@ -18,6 +18,7 @@ body {
   --second--white: #eeeeee;
   --color-degrade--grba: rgba(255, 255, 255, 0.6);
   --background--buttons: #f5f4fa;
+  --color--header--border: #ececec;
 }
 
 /* STYLES PRINCIPAL */
@@ -26,6 +27,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+}
+
+.container-header {
+  width: 100%;
+  border-bottom: 1px solid var(--color--header--border);
 }
 
 .list {
@@ -44,8 +50,8 @@ body {
 
 .section--header {
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .section--header--logo {
@@ -269,7 +275,15 @@ body {
 /* PRIMEROS BOTONES */
 
 .section--buttons {
+  margin-top: 106px;
+  margin-bottom: 50px;
+  display: flex;
   text-align: center;
+  justify-content: center;
+}
+
+.section--buttons--item {
+  margin-right: 8px;
 }
 
 .section--buttons--generally {
@@ -281,6 +295,18 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+}
+
+.btn-todo {
+  padding: 6px 18px;
+}
+
+.btn-sitios {
+  padding: 6px 24px;
+}
+
+.btn-diseño {
+  padding: 6px 26px;
 }
 
 .section--buttons--selected {
@@ -302,11 +328,22 @@ body {
 
 /* IMAGENES CON DESCRPICIÓN */
 
+.list-briefcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 82px;
+}
+
 .section--briefcase--tittle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+  margin: 0;
 }
 
 .section--briefcase--tittle--description {
@@ -314,6 +351,15 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--color--gray--757575);
+  margin: 0;
+  padding-left: 24px;
+}
+
+.section--briefcase--list--item {
+  width: 370px;
+  height: 434px;
+  background-color: var(--white--color);
+  border: 1px solid var(--color--header--border);
 }
 
 .section--briefcase--list--item:hover {
